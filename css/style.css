@@ -1,0 +1,84 @@
+/* Colours used:
+Primary colour (Orange): #FE8C3A, #FED6B8 (60%)
+Secondary colour (Blue): #203b81 */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  h1,h2,h3 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    color: #FE8C3A;
+    text-decoration: none;
+  }
+
+  /* a:visited {
+    color: #203b81;
+  } */
+
+  a:hover {
+    color:#FED6B8
+  }
+
+  a:focus {
+    color:#FED6B8;
+    text-decoration: underline;
+  }
+
+  /* a:active {
+    color:#203b81
+  } */
+
+.button {
+  display: inline-block;
+  background-color: #FE8C3A;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #FE8C3A;
+  text-transform: uppercase;
+  border: 2px solid;
+}
+
+.button.contact:hover {
+  background-color: #FE8C3A;
+  color: #ffffff;
+}
