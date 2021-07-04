@@ -1,13 +1,14 @@
 /* Colours used:
 Primary colour (Orange): #FE8C3A, #FED6B8 (60%)
+#C2471C
 Secondary colour (Blue): #203b81 */
 
 
 
 header {
   text-align: center;
-  padding: 20px 0 0;
-  background-color: aquamarine;
+  padding: 20px 0 13px;
+  background-color: #F9DCBC;
   position: fixed;
   box-shadow: 0px 0px 20px #888888;
   width: 100%;
@@ -18,7 +19,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 91px;
 }
 
 body {
@@ -49,6 +50,11 @@ body {
     margin-bottom: 0em;
   }
 
+  footer {
+    background-color: #f3f3f3;
+    padding: 1.25em 0;
+  }
+
   img {
     width: 100%;
   }
@@ -59,7 +65,7 @@ body {
   }
 
   nav > ul > li > a:visited {
-    color: #203b81 !important;
+    color: #C2471C !important;
   } 
 
   nav > ul > li > a:hover {
@@ -72,7 +78,7 @@ body {
   }
 
   nav > ul > li > a:active {
-    color:#203b81 !important
+    color:#C2471C !important
   }
 
 .button {
@@ -118,10 +124,6 @@ body {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
 
-#about-page .row {
-  border-bottom: 1px solid #4a4a4a;
-}
-
 .row::after {
   content: "";
   clear: both;
@@ -129,7 +131,7 @@ body {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #f3f3f3;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -156,6 +158,19 @@ body {
   margin-top: 0;
 }
 
+#contact {
+  text-align: center;
+}
+
+#about-page img {
+  max-width: 300px;
+}
+
+#about-page picture {
+  display: block;
+  text-align: center;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -163,6 +178,7 @@ body {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -229,8 +245,12 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
-  .col-md-6 {
-    width: 50%;
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
   }
 }
 
@@ -242,6 +262,10 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  }
+
+  main {
+    padding-top: 80px;
   }
 
   .col-lg-7 {
