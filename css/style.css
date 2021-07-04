@@ -6,12 +6,41 @@ Secondary colour (Blue): #203b81 */
 
 
 header {
-  text-align: center;
-  padding: 20px 0 13px;
+  padding: 20px 0 16px;
   background-color: #F9DCBC;
   position: fixed;
   box-shadow: 0px 0px 20px #888888;
   width: 100%;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 * {
@@ -19,7 +48,7 @@ header {
 }
 
 main {
-  padding-top: 91px;
+  padding-top: 63px;
 }
 
 body {
@@ -80,6 +109,8 @@ body {
   nav > ul > li > a:active {
     color:#C2471C !important
   }
+
+
 
 .button {
   display: inline-block;
@@ -172,7 +203,8 @@ body {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  padding-top: 8px;
 }
 
 nav > ul {
@@ -181,18 +213,9 @@ nav > ul {
   margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 500;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 .social svg {
@@ -214,12 +237,6 @@ nav {
   padding: 0 12px;
 }
 
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 /* Breakpoints */
 
 /* ==============================
@@ -231,10 +248,30 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .logo {
+    min-width: 250px;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
