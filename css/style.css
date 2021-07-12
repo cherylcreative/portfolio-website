@@ -7,7 +7,7 @@ Secondary colour (Blue): #203b81 */
 
 header {
   padding: 20px 0 16px;
-  background-color: #F9DCBC;
+  background-color: #FCEDDD;
   position: fixed;
   box-shadow: 0px 0px 20px #888888;
   width: 100%;
@@ -94,7 +94,7 @@ body {
   }
 
   nav > ul > li > a:visited {
-    color: #C2471C !important;
+    color: #B64D01 !important;
   } 
 
   nav > ul > li > a:hover {
@@ -107,7 +107,7 @@ body {
   }
 
   nav > ul > li > a:active {
-    color:#C2471C !important
+    color:#B64D01 !important
   }
 
 
